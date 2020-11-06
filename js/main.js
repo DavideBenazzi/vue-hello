@@ -7,6 +7,16 @@ const root = new Vue ({
   el: '#root',
   data: {
     message: 'Hello World!!!',
-    image: 'https://picsum.photos/200/300',
+    image: 'https://picsum.photos/600',
+    shape: 'square',
+  },
+  methods: {
+    changeShape: function () {
+      if (this.shape === 'square') {
+        this.shape = 'rounded';
+      } else {
+        this.shape = 'square';
+      };
+    },
   },
 });

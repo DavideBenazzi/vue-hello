@@ -5,11 +5,15 @@
     <title>vue-hello</title>
     <!-- VUE -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <div id="root">
       <h1>{{ message }}</h1>
-      <img :src="image" alt="foto">
+      <img :src="image" alt="foto" :class="shape">
+      <div class="btn">
+        <button @click="changeShape">Change Shape : {{shape}}</button>
+      </div>
     </div>
     <!-- JAVASCRIPT -->
     <script src="./js/main.js" charset="utf-8"></script>

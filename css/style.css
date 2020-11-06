@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rounded {
+  border-radius: 50%;
+  transition: 1s;
+}
+
+.square {
+  border-radius: 0;
+  transition: 1s;
+}
+
+.btn button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+}
